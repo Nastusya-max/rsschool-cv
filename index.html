@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio Website">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body class="container">
+  <header class="header">
+    <nav class="header-navigation">
+      <ul class="header-navigation__list">
+        <li class="header-navigation__item"><a class="header-navigation__link" href="#about-me">About Me</a></li>
+        <li class="header-navigation__item"><a class="header-navigation__link" href="#code-example">Code example</a>
+        </li>
+        <li class="header-navigation__item"><a class="header-navigation__link" href="#education">Education</a>
+        </li>
+        <li class="header-navigation__item"><a class="header-navigation__link" href="#projects">Projects</a>
+        </li>
+        <li class="header-navigation__item"><a class="header-navigation__link" href="#languages">Languages</a>
+        </li>
+        <li class="header-navigation__item"><a class="header-navigation__link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="homepage-section section" id="homepage">
+      <h1 class="homepage-section__heading heading heading--xxl">
+        Personal portfolio website
+      </h1>
+
+      <figure>
+        <div class="round-image">
+          <img class="figure-image" src="./img/photo_2023-01-18_22-00-07.jpg" alt="Profile photo">
+        </div>
+        <figcaption>Anastasia Chernyavskaya</figcaption>
+      </figure>
+    </section>
+
+    <section class="about-me-section section" id="about-me">
+      <div class="about-me-section__info">
+        <h2 class="about-me-section__heading heading heading--xl">
+          About Me
+        </h2>
+
+        <p>
+          I want to do what I love in an interesting and promising company.
+          I have a higher technical education, interned at EPAM, also graduated from their internal laboratory FRONT-END
+          LAB SUMMER-FALL 2021. I am familiar with SQL and React at a basic level. I took a course from SpurIT, where I
+          worked with Shopify.
+          I work responsibly and learn quickly.
+        </p>
+      </div>
+    </section>
+
+    <section class="key-skills-section section" id="key-skills">
+      <div class="key-skills-section__info">
+        <h2 class="key-skills-section__heading heading heading--xl">
+          Personal portfolio website
+        </h2>
+        <ul>
+          <li>HTML5, CSS3</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>PHP</li>
+          <li>a11y</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="code-example-section section" id="code-example">
+      <div class="code-example-section__info">
+        <h2 class="code-example-section__heading heading heading--xl">
+          Code example
+        </h2>
+        <p>"Unique In Order" from CODEWARS: Implement the function unique_in_order which takes as argument a sequence
+          and returns a list of items without any elements with the same value next to each other and preserving the
+          original order of elements.</p>
+        <h3>For example:</h3>
+        <code>
+            uniqueInOrder('AAAABBBCCDAABBB') == ['A', 'B', 'C', 'D', 'A', 'B']
+            uniqueInOrder('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
+            uniqueInOrder([1,2,2,3,3])       == [1,2,3]
+        </code>
+        <h3>Solution:</h3>
+        <code>
+          var uniqueInOrder=function(iterable){
+            const result = [];
+            
+            for(let i = 0; i &lt; iterable.length; i++){
+              if(iterable[i] !== iterable[i + 1]){
+                result.push(iterable[i]);
+              }
+            }
+            
+            return result;
+          }
+        </code>
+      </div>
+    </section>
+
+    <section class="projects-section section" id="projects">
+      <div class="projects-section__info">
+        <h2 class="projects-section__heading heading heading--xl">
+          Projects
+        </h2>
+        <ul>
+          <li> Последнее тестовое: <a
+              href="https://github.com/Nastusya-max/test-calc-js">https://github.com/Nastusya-max/test-calc-js</a></li>
+          <li>Репозиторий с React проектом: <a
+              href="https://github.com/Nastusya-max/React_Chernyavskaya">https://github.com/Nastusya-max/React_Chernyavskaya</a>
+          </li>
+          <li>Ссылка на репозиторий js-тасками:
+            <a
+              href="https://github.com/Nastusya-max/Front-End-Lab-Chernyavskaya">https://github.com/Nastusya-max/Front-End-Lab-Chernyavskaya</a>
+          </li>
+          <li>Вёрстка по макету:
+            <a
+              href="https://rolling-scopes-school.github.io/nastusya-max-JSFE2023Q1/shelter/pages/main/index.html">https://rolling-scopes-school.github.io/nastusya-max-JSFE2023Q1/shelter/pages/main/index.html</a>
+          </li>
+          <li>Вёрстка по макету: <a
+              href="https://github.com/Nastusya-max/HTML-CSS-Chernyavskaya">https://github.com/Nastusya-max/HTML-CSS-Chernyavskaya</a>
+          </li>
+          <li>Shopify тема: <a
+              href="https://github.com/Nastusya-max/Shopify-Theme">https://github.com/Nastusya-max/Shopify-Theme</a>
+          </li>
+          <li>Проект с шаблонизатором: <a
+              href="https://github.com/Nastusya-max/frontend_test_task">https://github.com/Nastusya-max/frontend_test_task
+              (webpack + ejs)</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="education-section section" id="education">
+      <div class="education-section__info">
+        <h2 class="education-section__heading heading heading--xl">
+          Education
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <td>Date</td>
+              <td>Name</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2018-2022</td>
+              <td>Gomel State Technical University named by P.O. Sukhoi, Information systems and technologies (in the
+                gaming
+                industry), engineer-system programmer-game designer</td>
+            </tr>
+            <tr>
+              <td>2020-2021</td>
+              <td>FRONT-END LAB SUMMER-AUTUMN 2021 from EPAM</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>"Frontend development on Shopify" from SpurIT</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="languages-section section" id="languages">
+      <div class="key-skills-section__info">
+        <h2 class="key-skills-section__heading heading heading--xl">
+          Languages
+        </h2>
+        <ul>
+          <li>Belarusian — Native</li>
+          <li>Russian — Native</li>
+          <li>English — B1 — Intermediate</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <section class="contacts-section section" id="contacts">
+      <div class="contacts-section__info">
+        <h2 class="contacts-section__heading heading heading--xl">
+          Contacts
+        </h2>
+        <ul>
+          <li><a href="https://github.com/Nastusya-max">GitHub</a></li>
+          <li>Discord: Ayernesa (@Nastusya-max)</li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="footer__copyright">
+      <img class="rs-logo" src="./img/favicon-16x16.png" alt="The Rolling Scopes logo">
+      <small class="copyright-text"> <a href="https://rs.school/js-stage0/">The Rolling Scopes</a> <time
+          datetime="2023">2023</time></small>
+    </p>
+  </footer>
+</body>
